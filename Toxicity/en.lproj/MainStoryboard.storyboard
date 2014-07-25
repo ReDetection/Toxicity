@@ -300,12 +300,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DnX-Uz-f9S">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="DnX-Uz-f9S">
                                 <rect key="frame" x="15" y="139" width="290" height="290"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="290" id="8B6-o5-kcK"/>
+                                    <constraint firstAttribute="height" constant="290" id="jXv-qJ-U4R"/>
+                                </constraints>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstAttribute="centerX" secondItem="DnX-Uz-f9S" secondAttribute="centerX" id="H7R-XV-wkB"/>
                             <constraint firstAttribute="centerY" secondItem="DnX-Uz-f9S" secondAttribute="centerY" id="m4y-XD-PlH"/>
                         </constraints>
                     </view>
