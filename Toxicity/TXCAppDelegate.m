@@ -814,7 +814,7 @@ void print_message(Tox *m, int friendnumber, uint8_t * string, uint16_t length, 
         NSLog(@"Message from [%d]: %s", friendnumber, string);
         
         TXCMessageObject *theMessage = [[TXCMessageObject alloc] initWithMessage:[NSString stringWithUTF8String:(char *)string]
-                                                                          origin:MessageLocation_Me
+                                                                          origin:MessageLocation_Them
                                                                           family:MessageFamily_Friend
                                                                             type:MessageType_Regular
                                                                       senderName:[[TXCSingleton sharedSingleton] userNick]
